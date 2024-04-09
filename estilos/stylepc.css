@@ -38,7 +38,6 @@ html{
 }
 
 header{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -103,22 +102,25 @@ nav ul li a:hover{
 }
 
 div.divisao{
+    top: 0;
+    bottom: 0;
     position: absolute;
     background-color: var(--cor5);
     width: 700px;
-    height: 100vh;
+    height: calc(100vh + 60px);
     right: 0;
     clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 /* SECTION SOBRE */
 section#sobre{
+    background-color: var(--cor1);
     height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-left: 80px;
-    margin-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 section#sobre div#txtsobre{

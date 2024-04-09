@@ -77,7 +77,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        gap: 90px;
+        align-items: center; 
         height: 100vh;
         background-color: var(--cor5);
         width: 80vw;
@@ -92,8 +93,7 @@
     .active .list-menu{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        gap: 90px;
         height: 100vh;
         background-color: var(--cor5);
         width: 80vw;
@@ -104,6 +104,10 @@
         transform: translateX(0%);
     }
     
+    .menu li{
+        
+    }
+
     .menu li a{
         color: white;
         z-index: 2000;
@@ -124,16 +128,13 @@
     }
     
     /* SECTION SOBRE */
-    section#servicos{
-        height: 1700px;
-    }
-    
+   
     section#sobre{
-        height: 100vh;
+        height: 650px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 40px;
+        gap: 60px;
         align-items: center;
         padding-top: 50px;
     }
@@ -141,10 +142,19 @@
     section#sobre div#txtsobre{
         width: 300px;
         text-align: center;
+        padding-top: 0px;
+    }
+    section#sobre div#txtsobre h1{
+        padding-bottom: 30px;
     }
     
+    section#sobre div#txtsobre p{
+        padding-bottom: 20px;
+    }
+
     section#sobre div#imgsobre img{
-        width: 300px;
+        width: 350px;
+        height: 230px;
     }
     
     section#sobre div#txtsobre button{
