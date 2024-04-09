@@ -236,7 +236,8 @@ div.cards::before{
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, var(--cor4), var(--cor1));
+    background-color: transparent;
+    backdrop-filter: blur(5px);
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
@@ -258,16 +259,19 @@ div.cards div.info{
 
 div.cards div.info h3{
     font-size: 2rem;
+    font-weight: bolder;
     padding-bottom: 15px;
 }
 
 div.cards div.info p{
     font-size: 1.4REM;
+    font-weight: bold;
+    width: 200px;
 }
 
 div.cards:hover .info{
     opacity: 1;
-    transform: translateY(-50px);
+    transform: translateY(-120px);
 }
 
 div.cards h4{
@@ -295,6 +299,7 @@ section#galeria{
     display: flex;
     flex-direction: column;
 }
+
 
 section#galeria h2{
     color: var(--cor5);
