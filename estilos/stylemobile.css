@@ -77,7 +77,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 100px;
         align-items: center;
         height: 100vh;
         background-color: var(--cor5);
@@ -94,7 +93,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 100px;
         align-items: center;
         height: 100vh;
         background-color: var(--cor5);
