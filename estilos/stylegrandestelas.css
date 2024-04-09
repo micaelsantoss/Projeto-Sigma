@@ -1,0 +1,71 @@
+@media screen and (min-width: 1500px){
+    html{
+        overflow-x: hidden;
+        font-size: 82.5%; 
+        scroll-behavior: smooth;   
+    }
+
+    nav{
+        background-color: var(--cor1);
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        margin: auto;
+    }
+
+    div.logo{
+        margin-right: 200px;
+    }
+
+    nav button#btn{
+        width: 200px;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        background-color: var(--cor3);
+        font-weight: bold;
+        font-size: 1.5rem;
+        z-index: 50;
+        cursor: pointer;
+        margin-top: -10px;
+        margin-left: 180px;
+    }
+
+    section#sobre div#txtsobre button{
+        width: 350px;
+        height: 60px;
+        border-radius: 15px;
+        border: none;
+        background-color: var(--cor3);  
+        cursor: pointer;
+    }
+
+    section#sobre div#imgsobre img{
+        width: 700PX;
+        border-radius: 50px;
+    }
+
+    div.divisao{
+        position: absolute;
+        background-color: var(--cor5);
+        width: 60%;
+        height: 100vh;
+        right: 0;
+        clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    section#sobre{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    section#sobre div#txtsobre{
+        width: 500px;
+        margin-right: 100px;
+    }
+
+}
