@@ -125,11 +125,11 @@
     /* SECTION SOBRE */
 
     section#sobre{
-        height: 1500px;
+        height: 1100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 40px;
+        gap: 100px;
         align-items: center;
         padding-top: 50px;
     }
@@ -205,7 +205,7 @@
 
      /* SECTION GALERIA */
      section#galeria{
-        height: 1050px;
+        height: 900px;
     }
 
     section#galeria h2{

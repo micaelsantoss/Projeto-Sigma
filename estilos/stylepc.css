@@ -338,40 +338,270 @@ section#galeria h2{
 section#galeria div#fotos{
     display: flex;
     width: 80%;
-    max-width: 1350px;
+    max-width: 800px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
     padding: 0 1vw;
 }
 
-section#galeria div.fotos{
-    width: 300px;
-    height: 220px;
-    border: 5px solid white;
-    box-shadow: 5px 5px 5px black;
-    transition: 0.2s;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #0C2859;
+/*section#galeria div.fotos:hover{
+    scale: 1.10;
 }
 
-section#galeria div.fotos p{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
+section#galeria div.fotos1:hover{
+    scale: 1.10;
 }
 
-section#galeria div.fotos:hover{
-    scale: 1.05;
+section#galeria div.fotos2:hover{
+    scale: 1.10;
 }
 
-section#galeria div#fotos img{
-    width: 100%;
-    height: 85%;
-    object-fit: cover;
-}
+section#galeria div.fotos3:hover{
+    scale: 1.10;
+}*/
+
+
+    /* FOTOS ANTES E DEPOIS */
+    section#galeria div.fotos{
+        width: 350px;
+        height: 240px;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 20px;
+        overflow: hidden;
+        background-image: url(../Imagens/banco\ carro.jpg);
+        background-size: cover;
+        position: relative;
+    }
+
+
+    .fotos .clip{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+    }
+    .fotos .clip.clip1{
+        background-image: url(../Imagens/banco\ carro.jpg);
+        background-size: cover;
+        clip-path: polygon(0 0, 70% 0, 30% 100%, 0% 100%);
+    }
+    .fotos .clip.clip2{
+        background-image: url(../Imagens/limpeza\ amolfada.jpg);
+        background-size: cover;
+        clip-path: polygon(70% 0, 100% 0%, 100% 100%, 30% 100%);  
+    }
+    .fotos:hover .clip{
+        clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+    }
+    .fotos .clip:hover{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .fotos .content {
+        position: absolute;
+        bottom: -100px;
+        left: 105px;
+        opacity: 0;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border-radius: 5px;
+        transition: .5s;
+    }
+    .fotos .content h4{
+        text-align: center;
+        width: 100px;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 5px 5px 5px black; 
+    }
+    .fotos:hover .content{
+        bottom: 10px;
+        opacity: 1;
+    }
+
+    /* FOTOS ANTES E DEPOIS 1 */
+    section#galeria div.fotos1{
+        width: 350px;
+        height: 240px;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 20px;
+        overflow: hidden;
+        background-image: url(../Imagens/cama.jpg);
+        background-size: cover;
+        position: relative;
+    }
+
+    .fotos1 .clip{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+    }
+    .fotos1 .clip.clip1{
+        background-image: url(../Imagens/cama.jpg);
+        background-size: cover;
+        clip-path: polygon(0 0, 70% 0, 30% 100%, 0% 100%);
+    }
+    .fotos1 .clip.clip2{
+        background-image: url(../Imagens/poltronas.jpg);
+        background-size: cover;
+        clip-path: polygon(70% 0, 100% 0%, 100% 100%, 30% 100%);  
+    }
+    .fotos1:hover .clip{
+        clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+    }
+    .fotos1 .clip:hover{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .fotos1 .content {
+        position: absolute;
+        bottom: -100px;
+        left: 105px;
+        opacity: 0;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border-radius: 5px;
+        transition: .5s;
+    }
+    .fotos1 .content h4{
+        text-align: center;
+        width: 100px;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 5px 5px 5px black; 
+    }
+    .fotos1:hover .content{
+        bottom: 10px;
+        opacity: 1;
+    }
+
+    /* FOTOS ANTES E DEPOIS 2 */
+    section#galeria div.fotos2{
+        width: 350px;
+        height: 240px;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 20px;
+        overflow: hidden;
+        background-image: url(../Imagens/banco\ carro\ 2.jpg);
+        background-size: cover;
+        position: relative;
+    }
+
+    .fotos2 .clip{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+    }
+    .fotos2 .clip.clip1{
+        background-image: url(../Imagens/banco\ carro\ 2.jpg);
+        background-size: cover;
+        clip-path: polygon(0 0, 70% 0, 30% 100%, 0% 100%);
+    }
+    .fotos2 .clip.clip2{
+        background-image: url(../Imagens/limpeza\ cadeira.jpg);
+        background-size: cover;
+        clip-path: polygon(70% 0, 100% 0%, 100% 100%, 30% 100%);  
+    }
+    .fotos2:hover .clip{
+        clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+    }
+    .fotos2 .clip:hover{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .fotos2 .content {
+        position: absolute;
+        bottom: -100px;
+        left: 105px;
+        opacity: 0;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border-radius: 5px;
+        transition: .5s;
+    }
+    .fotos2 .content h4{
+        text-align: center;
+        width: 100px;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 5px 5px 5px black; 
+    }
+    .fotos2:hover .content{
+        bottom: 10px;
+        opacity: 1;
+    }
+
+
+    /* FOTOS ANTES E DEPOIS 3 */
+    section#galeria div.fotos3{
+        width: 350px;
+        height: 240px;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 20px;
+        overflow: hidden;
+        background-image: url(../Imagens/cama2.jpg);
+        background-size: cover;
+        position: relative;
+    }
+
+    .fotos3 .clip{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+    }
+    .fotos3 .clip.clip1{
+        background-image: url(../Imagens/cama2.jpg);
+        background-size: cover;
+        clip-path: polygon(0 0, 70% 0, 30% 100%, 0% 100%);
+    }
+    .fotos3 .clip.clip2{
+        background-image: url(../Imagens/limpeza\ sofa.jpg);
+        background-size: cover;
+        clip-path: polygon(70% 0, 100% 0%, 100% 100%, 30% 100%);  
+    }
+    .fotos3:hover .clip{
+        clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+    }
+    .fotos3 .clip:hover{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .fotos3 .content {
+        position: absolute;
+        bottom: -100px;
+        left: 105px;
+        opacity: 0;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border-radius: 5px;
+        transition: .5s;
+    }
+    .fotos3 .content h4{
+        text-align: center;
+        width: 100px;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 5px 5px 5px black; 
+    }
+    .fotos3:hover .content{
+        bottom: 10px;
+        opacity: 1;
+    }
+
+
+
 
 /* SECTION CONTATO */
 section#contato{
