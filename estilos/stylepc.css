@@ -317,6 +317,70 @@ div.cards img{
     left: 0;
 }
 
+.cont{
+    width: 80%;
+    background-color: white;
+}
+
+/* SECTION SERVICOS */
+div.sofa{
+    height: 700px;
+    display: flex;
+    background-color: #608FE0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.sofa h2{
+    font-size: 4rem;
+    padding-bottom: 40px;
+}
+
+div.sofa p{
+    font-size: 2rem;
+}
+
+#contsofa{ 
+    width: 500px;
+}
+
+
+div.sofa img{
+    width: 450px;
+    height: 500px;
+    border-radius: 44% 56% 70% 30% / 25% 43% 57% 75% ;
+}
+
+
+div.colchao{
+    height: 700px;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+div.colchao h2{
+    font-size: 4rem;
+    padding-bottom: 40px;
+}
+
+div.colchao p{
+    font-size: 2rem;
+}
+
+#contcolchao{ 
+    width: 500px;
+}
+
+
+div.colchao img{
+    width: 450px;
+    height: 500px;
+    border-radius: 19% 81% 34% 66% / 76% 67% 33% 24%;
+}
+
 /* SECTION GALERIA */
 section#galeria{
     height: 700px;
