@@ -292,6 +292,7 @@ div.cards div.info p{
     font-size: 1.4REM;
     font-weight: bold;
     width: 200px;
+    padding-bottom: 30px;
 }
 
 div.cards:hover .info{
@@ -318,15 +319,21 @@ div.cards img{
 }
 
 .cont{
-    width: 80%;
-    background-color: white;
+    width: 80px;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 15%;
 }
-
-/* SECTION SERVICOS */
+.cont:hover{
+    color: var(--cor3);
+    font-weight: bolder;
+}
+/* SECTION SERVICOS CONTEUDO */
 div.sofa{
     height: 700px;
     display: flex;
-    background-color: #608FE0;
+    background-color: var(--cor1);
     justify-content: space-around;
     align-items: center;
 }
@@ -334,6 +341,7 @@ div.sofa{
 div.sofa h2{
     font-size: 4rem;
     padding-bottom: 40px;
+    color: var(--cor5);
 }
 
 div.sofa p{
@@ -343,7 +351,6 @@ div.sofa p{
 #contsofa{ 
     width: 500px;
 }
-
 
 div.sofa img{
     width: 450px;
@@ -364,6 +371,7 @@ div.colchao{
 div.colchao h2{
     font-size: 4rem;
     padding-bottom: 40px;
+    color: var(--cor5);
 }
 
 div.colchao p{
@@ -374,8 +382,68 @@ div.colchao p{
     width: 500px;
 }
 
-
 div.colchao img{
+    width: 450px;
+    height: 500px;
+    border-radius: 19% 81% 34% 66% / 76% 67% 33% 24%;
+}
+
+
+div.cadeiras{
+    height: 700px;
+    display: flex;
+    background-color: var(--cor1);
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.cadeiras h2{
+    font-size: 4rem;
+    padding-bottom: 40px;
+    color: var(--cor5);
+}
+
+div.cadeiras p{
+    font-size: 2rem;
+}
+
+#contcadeiras{ 
+    width: 500px;
+}
+
+
+div.cadeiras img{
+    width: 450px;
+    height: 500px;
+    border-radius: 44% 56% 70% 30% / 25% 43% 57% 75% ;
+}
+
+
+div.veiculos{
+    height: 700px;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+div.veiculos h2{
+    font-size: 4rem;
+    padding-bottom: 40px;
+    color: var(--cor5);
+}
+
+div.veiculos p{
+    font-size: 2rem;
+}
+
+#contveiculos{ 
+    width: 500px;
+}
+
+
+div.veiculos img{
     width: 450px;
     height: 500px;
     border-radius: 19% 81% 34% 66% / 76% 67% 33% 24%;
