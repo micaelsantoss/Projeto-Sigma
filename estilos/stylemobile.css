@@ -11,28 +11,36 @@
     }
     
     html{
-        overflow-x: hidden;
+        width: 100%;
         font-size: 40%; 
         scroll-behavior: smooth;
+    }
+
+    body{
+        overflow-x: hidden;
     }
     
     /* HEADER */
     nav{
         display: flex;
         justify-content: space-between;
-        padding: 0px 0px 0px 20px;
+        padding: 0px 0px 0px 0px;
         background-color: var(--cor5);
         height: 50px;
         color: white;
         position: fixed;
-        width: 100%;
+        width: 100vw;
         z-index: 10000;
     }
     
     nav div.logo{
         padding-top: 20px;
     }
-    
+
+    nav ul{
+        gap: 10;
+    }
+
     #button{
         display: block;
     }
@@ -76,25 +84,15 @@
     .list-menu{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 150px;
+        
         align-items: center; 
-        height: 100vh;
-        background-color: var(--cor5);
-        width: 80vw;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
         transform: translateX(100%);
-        transition: transform .5s ease-in;
     }
     
     .active .list-menu{
+        padding-top: 100px;
         display: flex;
-        flex-direction: column;
-        gap: 150px;
-        height: 100vh;
+        gap: 100px;
         background-color: var(--cor5);
         width: 80vw;
         position: fixed;
@@ -126,7 +124,7 @@
     /* SECTION SOBRE */
    
     section#sobre{
-        height: 100vh;
+        height: 800px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -141,6 +139,7 @@
     }
     section#sobre div#txtsobre h1{
         padding-bottom: 30px;
+        padding-top: 50px;
         font-size: 5rem;
     }
     
@@ -203,6 +202,99 @@
     div.cards div.info p{
         font-size: 2REM;
         width: 200px;
+    }
+
+    /*SECTION SERVIÇOS CONTEÚDO*/
+    div.sofa{
+        flex-direction: column;
+        justify-content: center;
+        height: 650px;
+    }
+
+    div.sofa h2{
+       text-align: center;
+        padding-bottom: 15px;
+    }
+
+    div.sofa p{
+        text-align: center;
+        width: 300px;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+
+    div.sofa img{
+        width: 300px;
+        height: 300px;
+    }
+
+    div.colchao{
+        justify-content: center;
+        height: 650px;
+        flex-direction: column;
+    }
+
+    div.colchao h2{
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    div.colchao p{
+        width: 300px;
+        margin: auto;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    div.colchao img{
+        width: 300px;
+        height: 300px;
+    }
+
+    div.cadeiras{
+        justify-content: center;
+        height: 650px;
+        flex-direction: column;
+    }
+
+    div.cadeiras h2{
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    div.cadeiras p{
+        width: 300px;
+        margin: auto;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    div.cadeiras img{
+        width: 300px;
+        height: 300px;
+    }
+
+    div.veiculos{
+        justify-content: center;
+        height: 650px;
+        flex-direction: column;
+    }
+
+    div.veiculos h2{
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    div.veiculos p{
+        width: 300px;
+        margin: auto;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    div.veiculos img{
+        width: 300px;
+        height: 300px;
     }
 
     /* SECTION GALERIA */
